@@ -56,7 +56,7 @@ For distillation, several parameters can be set:
 - `--distillation_config.distil_factor`: Factor for distillation loss.
 - `--save_step`: Interval for saving checkpoints during training.
 - `--encoder_decoder`: Specify this parameter if the student model follows an encoder-decoder architecture.
-- `--f`: Choose the method. f=3: ours (fast); f=4: ours (greedy).
+- `--f`: Choose the method. f=1: ours (fast); f=2: ours (greedy).
 
 # Example
 
@@ -79,7 +79,7 @@ export CUDA_VISIBLE_DEVICES=0 python finetuning.py \
 --distillation_config_pure_bf16 \
 --distillation_config_distil_factor 1.5 \
 --save_step 2000 \
---f 3
+--f 1
 
 ```
 
