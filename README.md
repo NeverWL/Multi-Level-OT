@@ -1,4 +1,5 @@
 # Multi-Level Optimal Transport for Universal Cross-Tokenizer Knowledge Distillation on Language Models
+The paper has been accepted as AAAI 2025 oral.
 
 ## Download Pre-trained Teacher Models
 
