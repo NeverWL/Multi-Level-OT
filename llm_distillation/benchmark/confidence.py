@@ -12,7 +12,7 @@ from itertools import chain
 from tqdm import tqdm
 import csv
 
-sys.path.append(f"{os.getenv('HOME')}/llm-recipes/llm_distillation")
+sys.path.append(f"{os.getenv('HOME')}/Multi-Level-OT/llm_distillation")
 os.environ["TOKENIZERS_PARALLELISM"] = "true"
 
 def get_device():
@@ -143,7 +143,7 @@ if __name__ == "__main__":
                 ))
 
     titled_folder = "titled" if has_title else "untitled"
-    output = args.output_path if args.output_path else f"{os.getenv('HOME')}/llm-recipes/llm_distillation/benchmark/results/{args.model_id.split('/')[-1]}/{args.dataset_id.split('/')[-1]}/{titled_folder}/confidence.csv"
+    output = args.output_path if args.output_path else f"{os.getenv('HOME')}/Multi-Level-OT/llm_distillation/benchmark/results/{args.model_id.split('/')[-1]}/{args.dataset_id.split('/')[-1]}/{titled_folder}/confidence.csv"
     with open(output, 'w', newline='') as csv_file:
         writer = csv.writer(csv_file)
         for row in results:
