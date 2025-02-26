@@ -109,16 +109,16 @@ For example:
 ```bash
 #export HOME=
 
-export CUDA_VISIBLE_DEVICES=0 python $HOME/llm-recipes/llm_distillation/benchmark/benchmark619.py \
-  --model_id "$HOME/llm-recipes/results/output-qedllama-opt" \
-  --model_tokenizer "$HOME/llm-recipes/EleutherAI/opt-350m" \
-  --dataset_id "$HOME/llm-recipes/llm_distillation/datasets/processed/qed" \
+export CUDA_VISIBLE_DEVICES=0 python $HOME/Multi-Level-OT/llm_distillation/benchmark/benchmark619.py \
+  --model_id "$HOME/Multi-Level-OT/results/output-qedllama-opt" \
+  --model_tokenizer "$HOME/Multi-Level-OT/EleutherAI/opt-350m" \
+  --dataset_id "$HOME/Multi-Level-OT/llm_distillation/datasets/processed/qed" \
   --split_name "validation" \
   --context \
   --title \
   --batch_size 1 \
   --num_workers 1 \
-  --output_path "$HOME/llm-recipes/test/" \
+  --output_path "$HOME/Multi-Level-OT/test/" \
   --number_few_shot 0 \
   --context_length 1024 \
   --from_disk \
