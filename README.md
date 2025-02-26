@@ -39,6 +39,10 @@ The distilled student model for each task reported in the paper can be downloade
 [https://drive.google.com/drive/folders/1ZE_wu0Ey2KpKrjq3NA0VgAvyhynOR6a4?usp=sharing](https://drive.google.com/drive/folders/1ZE_wu0Ey2KpKrjq3NA0VgAvyhynOR6a4?usp=sharing
 )
 
+## Datasets
+We have upload llm_distillation/datasets on google drive.[https://drive.google.com/drive/folders/1ZE_wu0Ey2KpKrjq3NA0VgAvyhynOR6a4?usp=sharing](https://drive.google.com/drive/folders/1ZE_wu0Ey2KpKrjq3NA0VgAvyhynOR6a4?usp=sharing
+) You need to download by yourself, because it is too big to git push.
+
 ## Task-specific Student Model Distillation
 
 
