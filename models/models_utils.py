@@ -30,7 +30,7 @@ from models.tools import (
 def load_tokenizer(name, encoder_decoder):
     tokenizer = AutoTokenizer.from_pretrained(name,trust_remote_code=True)
     if tokenizer.eos_token is None:
-        tokenizer.eos_token = "<|endoftext|>" 
+        tokenizer.eos_token = "<|endoftext|>"  # 这里可以根据您的模型需要设置适当的结束符
     if not encoder_decoder:
         tokenizer.pad_token_id = tokenizer.eos_token_id
     return tokenizer
