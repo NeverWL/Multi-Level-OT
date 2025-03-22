@@ -127,7 +127,6 @@ export CUDA_VISIBLE_DEVICES=0 python $HOME/Multi-Level-OT/llm_distillation/bench
   --context_length 1024 \
   --from_disk \
   --task "qa" \
-  --f 1 \
   --save_predictions
 
 ```
