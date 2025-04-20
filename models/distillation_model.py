@@ -53,7 +53,7 @@ class Sinkhorn_seq(nn.Module):
         p_t = softmax(y_t/self.T)
         emd_loss = 0
         for i in range(p_s.shape[0]):
-            emd_loss = 0.001*self.sinkhorn_loss(x=p_s[i],y=p_t[i])
+            emd_loss += 0.001*self.sinkhorn_loss(x=p_s[i],y=p_t[i])
         return emd_loss
 
 def greedy_algorithm_adjust_s(t, s):
